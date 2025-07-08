@@ -219,7 +219,7 @@ body {
 }
 
  .radio-input {
-            display: none; /* Hide default radio button */
+            display: none;
         }
 
         .radio-custom {
