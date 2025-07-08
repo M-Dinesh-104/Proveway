@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proveway</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="cart-card">
+            <div class="header">
+                <h2>YAY! It's BOGO</h2>
+            </div>
+            
+            <div class="cart-items">
+                <!-- Item 1 -->
+                <div class="cart-item" data-item="1" data-price="10.00" onclick="toggleSelection(this)">
+                    <div class="item-header">
+                        <div class="item-details">
+                            <div class="item-info">
+                                <span class="item-number">1 Unit</span>
+                                <span class="tag">10% Off</span>
+                            </div>
+                             <span class="standard-price">Standard Price</span>
+                        </div>
+                        <div class="item-price">
+                            <span>$10.00 USD</span>
+                            <span class="original-price">$18.00 USD</span>
+                        </div>
+                        <div class="radio-container">
+                            <input type="radio" name="cart-selection" class="radio-input" onclick="event.stopPropagation()">
+                            <div class="radio-custom"></div>
+                        </div>
+                    </div>
+                    <div class="item-content-container">
+                        <div class="item-content">
+                        <div class="selection-grid">
+                            <div class="selection-row">
+                                <span class="row-label1">#1</span>
+                                <div class="selection-item">
+                                    <span class="item-label">Size</span>
+                                    <select class="dropdown" onclick="event.stopPropagation()">
+                                        <option value="S">S</option>
+                                        <option value="M">M</option>
+                                        <option value="L">L</option>
+                                        <option value="XL">XL</option>
+                                    </select>
+                                </div>
+                                <div class="selection-item">
+                                    <span class="item-label">Colour</span>
+                                    <select class="dropdown" onclick="event.stopPropagation()">
+                                        <option value="Black">Black</option>
+                                        <option value="White">White</option>
+                                        <option value="Gray">Gray</option>
+                                        <option value="Navy">Navy</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    
+                </div>
+
+                <!-- Item 2 -->
+                <div class="cart-item popular" data-item="2" data-price="18.00" onclick="toggleSelection(this)">
+                    <span class="most-popular1"><span class="most-popular">MOST POPULAR</span></span>
+                    <div class="item-header">
+                        <div class="item-details">
+                            <div class="item-info">
+                                <span class="item-number">2 Unit</span>
+                                <span class="tag">20% Off</span>
+                            </div>
+                        </div>
+                        <div class="item-price1">
+                            <span>$18.00 USD</span>
+                            <span class="original-price">$24.00 USD</span>
+                        </div>
+                        <div class="radio-container">
+                            <input type="radio" name="cart-selection" class="radio-input" onclick="event.stopPropagation()">
+                            <div class="radio-custom"></div>
+                        </div>
+                    </div>
+                    <div class="item-content-container">
+                        <div class="item-content">
+                        <div class="selection-grid">
+                            <div class="selection-row">
+                                <span class="row-label2">#1</span>
+                                <div class="selection-item">
+                                    <span class="item-label">Size</span>
+                                    <select class="dropdown" onclick="event.stopPropagation()">
+                                        <option value="S">S</option>
+                                        <option value="M">M</option>
+                                        <option value="L">L</option>
+                                        <option value="XL">XL</option>
+                                    </select>
+                                </div>
+                                <div class="selection-item">
+                                    <span class="item-label">Colour</span>
+                                    <select class="dropdown" onclick="event.stopPropagation()">
+                                        <option value="Black">Black</option>
+                                        <option value="White">White</option>
+                                        <option value="Gray">Gray</option>
+                                        <option value="Navy">Navy</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="selection-row">
+                                <span class="row-label">#2</span>
+                                <div class="selection-item">
+                                    
+                                    <select class="dropdown" onclick="event.stopPropagation()">
+                                        <option value="S">S</option>
+                                        <option value="M">M</option>
+                                        <option value="L">L</option>
+                                        <option value="XL">XL</option>
+                                    </select>
+                                </div>
+                                <div class="selection-item">
+                                    
+                                    <select class="dropdown" onclick="event.stopPropagation()">
+                                        <option value="Black">Black</option>
+                                        <option value="White">White</option>
+                                        <option value="Gray">Gray</option>
+                                        <option value="Navy">Navy</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    
+                </div>
+
+                <!-- Item 3 -->
+                <div class="cart-item" data-item="3" data-price="24.00" onclick="toggleSelection(this)">
+                    <div class="item-header">
+                        <div class="item-details">
+                            <div class="item-info">
+                                <span class="item-number">3 Unit</span>
+                                <span class="tag">30% Off</span>
+                            </div>
+                        </div>
+                        <div class="item-price">
+                            <span>$24.00 USD</span>
+                            <span class="original-price">$80.00 USD</span>
+                        </div>
+                        <div class="radio-container">
+                            <input type="radio" name="cart-selection" class="radio-input" onclick="event.stopPropagation()">
+                            <div class="radio-custom"></div>
+                        </div>
+                    </div>
+                    <div class="item-content-container">
+                          <div class="item-content">
+                        <div class="selection-grid">
+                            <div class="selection-row">
+                                <span class="row-label1">#1</span>
+                                <div class="selection-item">
+                                    <span class="item-label">Size</span>
+                                    <select class="dropdown" onclick="event.stopPropagation()">
+                                        <option value="S">S</option>
+                                        <option value="M">M</option>
+                                        <option value="L">L</option>
+                                        <option value="XL">XL</option>
+                                    </select>
+                                </div>
+                                <div class="selection-item">
+                                    <span class="item-label">Colour</span>
+                                    <select class="dropdown" onclick="event.stopPropagation()">
+                                        <option value="Black">Black</option>
+                                        <option value="White">White</option>
+                                        <option value="Gray">Gray</option>
+                                        <option value="Navy">Navy</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="selection-row">
+                                <span class="row-label">#2</span>
+                                <div class="selection-item">
+                                    <select class="dropdown" onclick="event.stopPropagation()">
+                                        <option value="S">S</option>
+                                        <option value="M">M</option>
+                                        <option value="L">L</option>
+                                        <option value="XL">XL</option>
+                                    </select>
+                                </div>
+                                <div class="selection-item">
+                                    <select class="dropdown" onclick="event.stopPropagation()">
+                                        <option value="Black">Black</option>
+                                        <option value="White">White</option>
+                                        <option value="Gray">Gray</option>
+                                        <option value="Navy">Navy</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="selection-row">
+                                <span class="row-label">#3</span>
+                                <div class="selection-item">
+                                    <select class="dropdown" onclick="event.stopPropagation()">
+                                        <option value="S">S</option>
+                                        <option value="M">M</option>
+                                        <option value="L">L</option>
+                                        <option value="XL">XL</option>
+                                    </select>
+                                </div>
+                                <div class="selection-item">
+                                    <select class="dropdown" onclick="event.stopPropagation()">
+                                        <option value="Black">Black</option>
+                                        <option value="White">White</option>
+                                        <option value="Gray">Gray</option>
+                                        <option value="Navy">Navy</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                  
+                </div>
+            </div>
+
+            <div class="delivery-info">
+                <span class="free-delivery">Free Delivery</span>
+                <span class="total">Total: $0.00 USD</span>
+            </div>
+
+            <button class="add-to-cart-btn" onclick="addToCart()">
+                + Add to Cart
+            </button>
+
+            <div class="powered-by">
+                @ Powered by Pumper
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
